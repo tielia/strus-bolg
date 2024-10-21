@@ -1,4 +1,4 @@
-import { Spacer } from "@nextui-org/Spacer";
+import { Spacer } from "@nextui-org/spacer";
 import { CustomCard } from "./customCard";
 // import { LanguageSwitcher } from "@/components/language-switch";
 import { UsdtOrder } from "@/components/usdt-order";
