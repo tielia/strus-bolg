@@ -72,7 +72,7 @@ export default function UserPage() {
           endContent={<ItemCounter number={13} />}
           startContent={
             <IconWrapper className="bg-success/10 text-success">
-              <BugIcon className="text-lg " />
+              <BugIcon className="text-lg" />
             </IconWrapper>
           }
         >
@@ -94,7 +94,7 @@ export default function UserPage() {
           endContent={<ItemCounter number={293} />}
           startContent={
             <IconWrapper className="bg-secondary/10 text-secondary">
-              <ChatIcon className="text-lg " />
+              <ChatIcon className="text-lg" />
             </IconWrapper>
           }
         >

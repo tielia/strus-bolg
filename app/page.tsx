@@ -1,6 +1,6 @@
 import { Spacer } from "@nextui-org/Spacer";
 import { CustomCard } from "./customCard";
-import { LanguageSwitcher } from "@/components/language-switch";
+// import { LanguageSwitcher } from "@/components/language-switch";
 import { UsdtOrder } from "@/components/usdt-order";
 
 export default function Home() {

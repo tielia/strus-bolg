@@ -26,14 +26,13 @@ export default function TeamPage() {
       setHasMore(json.next !== null);
 
       return {
-        // users:users,
         items: json.results,
         cursor: json.next,
       };
     },
   });
   type ColumnKey = string;
-  const renderCell = React.useCallback((user, columnKey:ColumnKey) => {
+  const renderCell = React.useCallback((user: { [x: string]: any; avatar: any; email: string | number | bigint | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<React.AwaitedReactNode> | null | undefined; }, columnKey: string | number) => {
     const cellValue = user[columnKey];
     switch (columnKey) {
       case "name":
@@ -73,13 +72,13 @@ export default function TeamPage() {
       >
         <TableHeader>
           <TableColumn key="name">Name</TableColumn>
-          <TableColumn key="height">lv</TableColumn>
-          <TableColumn key="mass">team</TableColumn>
-          <TableColumn key="birth_year">Birth year</TableColumn>
+          {/* <TableColumn key="age">lv</TableColumn> */}
+          <TableColumn key="age">team</TableColumn>
+          <TableColumn key="status">status</TableColumn>
         </TableHeader>
         <TableBody
           isLoading={isLoading}
-          items={list.items}
+          items={users}
           loadingContent={<Spinner color="white" />}
         >
           {(item) => (

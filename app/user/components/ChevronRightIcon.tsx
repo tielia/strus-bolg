@@ -1,4 +1,6 @@
-export const ChevronRightIcon = (props) => (
+import { JSX, SVGProps } from "react";
+
+export const ChevronRightIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
   <svg
     aria-hidden="true"
     fill="none"
