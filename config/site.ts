@@ -1,12 +1,16 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "phantom-bloc",
+  description: "phantom-bloc.",
   navItems: [
     {
       label: "Home",
       href: "/",
+    },
+    {
+      label: "market",
+      href: "/market",
     },
     {
       label: "Docs",
@@ -59,11 +63,29 @@ export const siteConfig = {
       href: "/logout",
     },
   ],
+  bottomItems:[
+    {
+      label: "Home",
+      href: "/",
+    },
+    {
+      label: "wallet",
+      href: "/wallet",
+    },
+    {
+      label: "team",
+      href: "/team",
+    },
+    {
+      label: "my",
+      href: "/user",
+    }
+  ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/",
+    twitter: "https://twitter.com/",
+    docs: "https://nextui.org/",
+    discord: "https://discord.gg/",
+    sponsor: "https://patreon.com/",
   },
 };
