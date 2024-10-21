@@ -32,7 +32,8 @@ export default function TeamPage() {
       };
     },
   });
-  const renderCell = React.useCallback((user, columnKey) => {
+  type ColumnKey = string;
+  const renderCell = React.useCallback((user, columnKey:ColumnKey) => {
     const cellValue = user[columnKey];
     switch (columnKey) {
       case "name":
