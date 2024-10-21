@@ -1,4 +1,6 @@
-export const SearchIcon = (props = {}) => (
+import { JSX, SVGProps } from "react";
+
+export const SearchIcon = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => (
     <svg
       aria-hidden="true"
       fill="none"
